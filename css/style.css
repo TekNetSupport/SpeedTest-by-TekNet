@@ -1,0 +1,60 @@
+:root {
+  --bg: #000000;
+  --red: #FF0000;
+  --silver: #C0C0C0;
+  --white: #FFFFFF;
+}
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #111;
+}
+
+.logo { height: 40px; }
+.ttl-badge img { height: 32px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+.panel {
+  background: #0A0A0A;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.metric .label { font-size: 12px; color: var(--silver); }
+.metric .value { font-size: 20px; font-weight: bold; }
+
+.start {
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 24px;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-top: 1px solid #111;
+}
+.mascot { height: 60px; }
+

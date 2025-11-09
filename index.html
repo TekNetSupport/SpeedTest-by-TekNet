@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>TekNet SpeedTest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="./assets/teknet-logo.svg" alt="TekNet" class="logo" />
+    <h1>TekNet SpeedTest</h1>
+    <!-- TTL badge removed -->
+  </header>
+
+  <main class="grid">
+    <section class="panel big">
+      <div class="metrics">
+        <div class="metric"><span class="label">Download</span><span id="dlVal" class="value">– Mbps</span></div>
+        <div class="metric"><span class="label">Upload</span><span id="ulVal" class="value">– Mbps</span></div>
+        <div class="metric"><span class="label">Latency</span><span id="latVal" class="value">– ms</span></div>
+        <div class="metric"><span class="label">Jitter</span><span id="jitVal" class="value">– ms</span></div>
+        <div class="metric"><span class="label">Packet Loss</span><span id="lossVal" class="value">– %</span></div>
+      </div>
+      <button id="startBtn" class="start">START</button>
+    </section>
+
+    <section class="panel">
+      <h2>Server Location</h2>
+      <div class="kv"><span class="k">Name</span><span id="serverName">TekNet • Chicago, IL</span></div>
+      <div class="kv"><span class="k">Coordinates</span><span id="serverCoords">41.8781, -87.6298</span></div>
+    </section>
+
+    <section class="panel">
+      <h2>User Location</h2>
+      <div class="kv"><span class="k">Coordinates</span><span id="userCoords">Permission required</span></div>
+      <div class="kv"><span class="k">Accuracy</span><span id="geoAccuracy">–</span></div>
+    </section>
+
+    <section class="panel">
+      <h2>Network Quality Score</h2>
+      <div class="scores">
+        <div class="score"><span class="k">Streaming</span><span id="scoreStream">–</span></div>
+        <div class="score"><span class="k">Gaming</span><span id="scoreGame">–</span></div>
+        <div class="score"><span class="k">Video Chat</span><span id="scoreChat">–</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </nav>
+    <img src="./assets/mascot-speedy.svg" alt="TekNet Mascot" class="mascot" />
+  </footer>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
